@@ -64,7 +64,7 @@ The `.pt` file contains a dictionary with two keys:
 
 ## Implementation
 
-```
+```python
 def pickle_data(X : torch.tensor, y : torch.tensor, n : int, path : str):
     """
     Saves the input data and labels as a PyTorch tensor file.
