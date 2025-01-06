@@ -62,3 +62,28 @@ Each `.pt` file contains a dictionary with two keys:
 
 - The `os.makedirs` function ensures the directory exists or is created automatically.
 - Files are saved using `torch.save`, which serializes the tensors to the `.pt` format.
+
+## Implementation
+
+```python
+def pickle_data_path_lists(path : str, dataloader):
+    """
+    Save data from a dataloader to disk as separate tensor files.
+
+    Args:
+        path (str): Directory where the tensor files will be saved.
+        dataloader (iterable): An iterable that yields tuples (X, y), where
+            X is the video tensor and y is the corresponding label tensor.
+
+    Each item from the dataloader will be saved as a .pt file in the specified
+    directory, with filenames formatted as 'tensor_<index>.pt'.
+    The directory will be created if it does not already exist.
+    """
+    for n, (X, y) in enumerate(dataloader):
+        tensor_data = {
+            'video': X,
+            'label': y
+        }
+        os.makedirs(path, exist_ok=True)
+        torch.save(tensor_data, os.path.join(path, f'tensor_{n}.pt'))
+```
