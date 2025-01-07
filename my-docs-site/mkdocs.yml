@@ -1,0 +1,62 @@
+site_name: SignLink-ISL
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy  # Enables the copy button for code snippets
+    - search.suggest     # Search suggestions
+    - search.highlight   # Highlights search results
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true  # Enable line numbers
+  - pymdownx.superfences   # Enhanced code block support
+  - codehilite:
+      guess_lang: false  # Avoid language guessing
+      linenums: true
+nav:
+  - Home: index.md
+  - About: about.md
+  - Trainer:
+      - Trainer_Batch_Slice: trainer/trainer_batch_slice.md
+      - Trainer_Pickle_Preload: trainer/trainer_pickle_preload.md
+  - Data_Loader:
+      - Video Dataset Loader MediaPipe Interpolated CV: data_loader/video_dataset_loader_mediapipe_interpolated_cv.md
+      - Video Dataset Loader MediaPipe Keypoints: data_loader/Video_dataset_loader_mediapipe_keypoints.md
+      - Video Dataset Loader MediaPipe: data_loader/Video_dataset_loader_mediapipe.md
+      - Video Dataset Loader: data_loader/VideoDatasetLoader.md
+  - Utils:
+      - Data_words:
+          - data_and_words: utils/data_words/data_and_words.md
+          - random_split: utils/data_words/random_split.md
+      - Metrics:
+          - display_confusion: utils/metrics/display_conf_matrix.md
+          - show_performance: utils/metrics/show_performance_scores.md
+      - Pickle:
+          - get_all_files: utils/pickle/get_all_file_paths.md
+          - pickle_data: utils/pickle/pickle_data.md
+          - preload_tensors: utils/pickle/preload_tensors.md
+      - Preload:
+          - preload_data: utils/preload/preload_data.md
+      - Save Load:
+          - load_checkpoint: utils/save_load/load_checkpoint.md
+          - load_model: utils/save_load/load_model.md
+          - save_checkpoint: utils/save_load/save_checkpoint.md
+      - Show Sequence:
+          - show_sequence: utils/show_sequence/show_sequence.md
+
+plugins:
+  - search

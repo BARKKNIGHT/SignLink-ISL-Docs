@@ -1,0 +1,1449 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="about/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>SignLink ISL Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#signlink-isl" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="SignLink ISL Documentation" class="md-header__button md-logo" aria-label="SignLink ISL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SignLink ISL Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="SignLink ISL Documentation" class="md-nav__button md-logo" aria-label="SignLink ISL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SignLink ISL Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-preparation-and-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Preparation and Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Preparation and Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-subset-50-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      INCLUDE SUBSET 50 Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-loader-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Loader Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Augmentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges-faced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges Faced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Improvements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-subset-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      INCLUDE SUBSET 50
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-include-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete INCLUDE Dataset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset &amp; References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Trainer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Trainer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trainer/trainer_batch_slice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trainer_Batch_Slice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trainer/trainer_pickle_preload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trainer_Pickle_Preload
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Utils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data_words
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Data_words
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/data_words/data_and_words/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    data_and_words
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/data_words/random_split/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    random_split
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Metrics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/metrics/display_conf_matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    display_confusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/metrics/show_performance_scores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    show_performance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pickle
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Pickle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/pickle/get_all_file_paths/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    get_all_files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/pickle/pickle_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pickle_data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/pickle/preload_tensors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    preload_tensors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Preload
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Preload
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/preload/preload_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    preload_data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Save Load
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Save Load
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/save_load/load_checkpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    load_checkpoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/save_load/load_model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    load_model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/save_load/save_checkpoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    save_checkpoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sequence
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Sequence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utils/sequence/show_sequence.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    show_sequence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataset-preparation-and-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Preparation and Processing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Preparation and Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-subset-50-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      INCLUDE SUBSET 50 Creation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataset-loader-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Loader Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-augmentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Augmentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges-faced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges Faced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Improvements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-subset-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      INCLUDE SUBSET 50
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-include-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete INCLUDE Dataset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset &amp; References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="signlink-isl">SignLink-ISL</h1>
+<p>SignLink-ISL is a deep learning-based system designed to recognize and interpret Indian Sign Language (ISL) gestures, facilitating effective communication between the deaf community and others. This project aims to build a robust Sign Language Recognition (SLR) model, with a specific focus on Indian Sign Language (ISL). The goal is to preprocess video datasets efficiently and train machine learning models to recognize and classify ISL gestures accurately.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#approach">Approach</a></li>
+<li><a href="#model-performance">Model Performance</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#dataset--references">Dataset &amp; References</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>Effective communication with individuals who are deaf or hard of hearing is increasingly important. To address this need, we developed SignLink-ISL. While the system is currently limited to recognizing and translating isolated sign language words due to dataset constraints, it lays the groundwork for future advancements. We hope this project serves as a starting point for others to build upon, eventually leading to a real-time translation system capable of converting entire sign language sentences into spoken language.</p>
+<h2 id="approach">Approach</h2>
+<h3 id="dataset-preparation-and-processing">Dataset Preparation and Processing</h3>
+<p>We built a custom dataset loader to convert videos into frames, making them easier to load into memory for training or inference. To enhance our model's learning capabilities, we integrated Mediapipe into the dataset loader to extract hand landmarks. However, this integration significantly slowed down the dataset loading process. To address this, we pickled the processed dataset and applied augmentations to the pickled data for training. While this approach worked, it introduced some limitations that could be improved upon, such as exploring alternative landmark extraction models to speed up dataset processing.</p>
+<p>Mediapipe also faced challenges in detecting hands consistently, which negatively impacted model performance. To counter this, we implemented interpolation to handle missing landmark values.</p>
+<h4 id="include-subset-50-creation">INCLUDE SUBSET 50 Creation</h4>
+<p>For the INCLUDE SUBSET 50 dataset, we randomly selected words from the larger INCLUDE dataset that had at least 20-21 videos per word. This ensured sufficient samples for training and validation, making the subset manageable while maintaining variability.</p>
+<h4 id="dataset-loader-versions">Dataset Loader Versions</h4>
+<p>We created two versions of the dataset loader:</p>
+<ol>
+<li><strong>Landmark-based Tensor Loader</strong>: This version returns a tensor of hand landmarks, suitable for training transformer models. Using this, we achieved an accuracy of 54.55% on the INCLUDE SUBSET 50 (details in the repo). Tuning hyperparameters significantly improved performance, but one challenge with transformers is diagnosing performance bottlenecks. For example, adding interpolation to handle missing Mediapipe detections improved results, highlighting the importance of addressing dataset quality.</li>
+<li><strong>Video Tensor Loader</strong>: This version returns tensors of video frames, making it suitable for CV-based models. This approach significantly improved performance, as discussed in the Model Performance section.</li>
+</ol>
+<h4 id="data-augmentation">Data Augmentation</h4>
+<p>Due to the large dataset size and slow speed of Mediapipe, we pickled the processed dataset for efficient use. We then applied the following augmentations:</p>
+<ul>
+<li><strong>INCLUDE SUBSET 50</strong> (12 frames per video):</li>
+<li>Base dataset with a 30% probability of horizontal flip (used for all augmentations).</li>
+<li>Additional datasets with:<ul>
+<li>Random crop.</li>
+<li>Random rotation (-7.5°, 7.5°).</li>
+<li>Combination of random crop and rotation.</li>
+</ul>
+</li>
+<li><strong>Complete INCLUDE Dataset</strong> (24 frames per video):</li>
+<li>Base dataset with no augmentation.</li>
+<li>Additional datasets with:<ul>
+<li>Horizontal flip (100% probability).</li>
+<li>Random crop.</li>
+<li>Random rotation (-5°, 5°).</li>
+<li>Combination of horizontal flip (50%) and random rotation (-5°, 5°).</li>
+</ul>
+</li>
+</ul>
+<p>We used these augmented datasets combined for final training models on both INCLUDE SUBSET 50 and the complete INCLUDE dataset.</p>
+<h3 id="model-exploration">Model Exploration</h3>
+<p>We experimented with several models, and r3d_18 consistently performed well across all datasets. While we also explored combinations like ResNet + GRU/LSTM, we observed their potential as lightweight models but could not explore them further due to hardware limitations.</p>
+<p>Transformers were also used to explore their capabilities. While they showed promising results (54.55% accuracy on INCLUDE SUBSET 50), we realized that hyperparameter tuning plays a significant role in their performance. However, unlike traditional computer vision tasks where images can be directly visualized to diagnose issues, the inability to easily comprehend the dataset makes it challenging to identify data-related problems.</p>
+<h3 id="challenges-faced">Challenges Faced</h3>
+<ol>
+<li><strong>Mediapipe Speed</strong>: Mediapipe significantly slowed down the dataset processing. We mitigated this by pickling the processed dataset to avoid repeated computations.</li>
+<li><strong>Hardware Limitations</strong>: We addressed this by using Kaggle or our own devices for testing and rented hardware from Vast AI for intensive training tasks.</li>
+<li><strong>Dataset Loading</strong>: Loading video datasets for training was challenging. We tackled this by creating our custom dataset loader with the help of FFmpeg.</li>
+</ol>
+<h3 id="future-improvements">Future Improvements</h3>
+<ol>
+<li>Landmark Extraction: Exploring alternatives to Mediapipe or improving its implementation in the dataset loader could enable real-time translation.</li>
+<li>Lightweight Models: ResNet + GRU/LSTM is a promising lightweight model combination that warrants further exploration.</li>
+<li>Enhanced Dataset: Using a more comprehensive dataset with both word-level and sentence-level videos could enable proper translation of sign language sentences into spoken language.</li>
+<li>Hyperparameter Tuning: Further tuning transformer hyperparameters could unlock better performance.</li>
+</ol>
+<h2 id="model-performance">Model Performance</h2>
+<p>We evaluated our models on both the INCLUDE SUBSET 50 and the complete INCLUDE dataset. Below are the detailed performance metrics:</p>
+<h3 id="include-subset-50">INCLUDE SUBSET 50</h3>
+<ol>
+<li>With Horizontal Flip (30% Probability) only</li>
+<li>r3d_18: Accuracy: 89.18%</li>
+<li>ResNet18 + GRU: Accuracy: 88.74%</li>
+<li>With All Augmentations</li>
+<li>r3d_18: Accuracy: 79.44%</li>
+</ol>
+<h3 id="complete-include-dataset">Complete INCLUDE Dataset</h3>
+<p>We trained the <strong>r3d_18</strong> model and achieved the following metrics:</p>
+<p><strong>Accuracy: 89.51%</strong></p>
+<p>Micro Metrics:
+ - F1 Score: 0.8951
+ - Precision: 0.8951
+ - Recall: 0.8951</p>
+<p>Macro Metrics:
+ - F1 Score: 0.8895
+ - Precision: 0.9069
+ - Recall: 0.8934</p>
+<p>Weighted Metrics:
+ - F1 Score: 0.8911
+ - Precision: 0.9071
+ - Recall: 0.8951</p>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>
+<p>Clone the repository:
+   <code>bash
+   git clone https://github.com/Naneet/SignLink-ISL.git</code></p>
+</li>
+<li>
+<p>Navigate to the project directory
+   <code>cd SignLink-ISL</code></p>
+</li>
+<li>
+<p>Install the required dependencies:
+   <code>pip install -r requirements.txt</code></p>
+</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>To understand the flow of the project and replicate the results, follow the notebooks in the recommended order:</p>
+<ol>
+<li><strong>Video Dataset Conversion</strong></li>
+<li>Notebook: <code>Video_dataset_conversion_refined.ipynb</code></li>
+<li>This notebook demonstrates the process of converting video datasets into frame-based tensors</li>
+<li><strong>Dataset Augmentation</strong></li>
+<li>Notebook: <code>Dataset_augmentation_pickled.ipynb</code></li>
+<li>Apply various augmentations (e.g., horizontal flip, random crop, random rotation) to pickled dataset.</li>
+<li><strong>Training the Models</strong></li>
+<li>Notebook: <code>Complete_INCLUDE_training_notebook.ipynb</code> / <code>Subset_50_training-notebook.ipynb</code></li>
+<li>Loads the pickled dataset.</li>
+<li>Covers the training process using different models like r3d_18 and ResNet18 + GRU/LSTM.</li>
+<li>Training configurations (e.g., hyperparameters, loss functions, optimizers).</li>
+<li>Model evaluation metrics and saving trained models.</li>
+</ol>
+<p>🚨🚨 We will also be creating docs for it soon for better understanding 🚨🚨 :)</p>
+<h2 id="dataset-references">Dataset &amp; References</h2>
+<p><a href="https://zenodo.org/records/4010759">INCLUDE Dataset</a></p>
+<p><a href="/dataset/ISL_SUBSET_50_WORDS.txt">INCLUDE SUBSET 50</a></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3394171.3413528">INCLUDE: A Large Scale Dataset for Indian Sign Language Recognition</a></p>
+<p><a href="https://cse.iitk.ac.in/users/cs365/2015/_submissions/vinsam/report.pdf">Indian Sign Language Character Recognition</a></p>
+<p><a href="https://arxiv.org/pdf/1412.2306">Deep Visual-Semantic Alignments for Generating Image Descriptions</a></p>
+<p><a href="https://www.irjet.net/archives/V7/i3/IRJET-V7I3418.pdf">Sign language Recognition Using Machine Learning Algorithm</a></p>
+<p><a href="https://pytorch.org/docs/stable/index.html">PyTorch Documentation</a></p>
+<p><a href="/dataset/README.md">Our version of dataset</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
