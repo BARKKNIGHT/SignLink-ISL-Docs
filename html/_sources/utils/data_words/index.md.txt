@@ -4,8 +4,8 @@ This section contains documentation related to data and word processing utilitie
 
 ## Contents
 
-- [Data and Words](http://localhost:8000/utils/data_words/data_and_words.html)  
+### [Data and Words](http://localhost:8000/utils/data_words/data_and_words.html)  
   Detailed information on handling and processing data and words.
 
-- [Random Split](http://localhost:8000/utils/data_words/random_split.html)  
+### [Random Split](http://localhost:8000/utils/data_words/random_split.html)  
   Description and examples of the random split functionality.
