@@ -1,20 +1,6 @@
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main  # or your default branch
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}  # Use the custom secret here
-        publish_dir: ./site  # The folder with your static files
-        publish_branch: gh-pages
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GH_TOKEN }}
+    publish_dir: ./site  # Replace with your folder
+    publish_branch: gh-pages
