@@ -23,7 +23,6 @@ jobs:
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
-          publish_dir: ./site
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
