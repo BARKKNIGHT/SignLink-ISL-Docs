@@ -2,6 +2,8 @@ site_name: SignLink-ISL
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
   palette:
     # Light mode
     - scheme: default
@@ -11,22 +13,30 @@ theme:
         name: Switch to dark mode
     # Dark mode
     - scheme: slate
-      primary: teal
+      primary: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - content.code.copy  # Enables the copy button for code snippets
-    - search.suggest     # Search suggestions
-    - search.highlight   # Highlights search results
+    - navigation.path
+    - content.code.copy       # Enables the copy button for code snippets
+    - search.suggest          # Search suggestions
+    - search.highlight        # Highlights search results
+    - navigation.tabs         # Tabbed navigation for better organization
+    - accessibility           # Adds font resizing controls for accessibility
+    - toc.integrate
+    - navigation.top
 
 markdown_extensions:
   - pymdownx.highlight:
-      linenums: true  # Enable line numbers
-  - pymdownx.superfences   # Enhanced code block support
+      linenums: true          # Enable line numbers
+  - pymdownx.superfences       # Enhanced code block support
   - codehilite:
-      guess_lang: false  # Avoid language guessing
+      guess_lang: false       # Avoid language guessing
       linenums: true
+  - toc:                      # Adds table of contents to pages
+      permalink: true
+
 nav:
   - Home: index.md
   - About: about.md
@@ -57,8 +67,17 @@ nav:
           - save_checkpoint: utils/save_load/save_checkpoint.md
       - Show Sequence:
           - show_sequence: utils/show_sequence/show_sequence.md
-  - License: license.md
 
+repo_url: https://github.com/Naneet/SignLink-ISL
+use_directory_urls: true
 plugins:
+  - git-authors
   - search
   - offline
+  - git-committers:
+       repository: Naneet/SignLink-ISL
+       branch: main
+  - simple:
+       version: "v2.0.0"
+  - redirects:              # Redirects for the custom 404 page
+      404.md: 404.md
