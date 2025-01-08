@@ -6,6 +6,11 @@ Display a sequence of frames in a grid format.
 
 The function visualizes a sequence of frames as a grid using `matplotlib`. Each frame is displayed as an image, with the sequence organized into rows and columns for easy visualization. The frames are normalized for display.
 
+#### Function Definition
+```python
+def show_sequence(sequence, NUM_FRAMES):
+```
+
 ## Arguments
 
 - **`sequence`** (`torch.tensor`):  
