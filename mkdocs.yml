@@ -57,6 +57,7 @@ nav:
           - save_checkpoint: utils/save_load/save_checkpoint.md
       - Show Sequence:
           - show_sequence: utils/show_sequence/show_sequence.md
+    - License: license.md
 
 plugins:
   - search
