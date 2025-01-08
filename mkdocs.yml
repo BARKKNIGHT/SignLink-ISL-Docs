@@ -71,13 +71,7 @@ nav:
 repo_url: https://github.com/Naneet/SignLink-ISL
 use_directory_urls: true
 plugins:
-  - git-authors
   - search
   - offline
-  - git-committers:
-       repository: Naneet/SignLink-ISL
-       branch: main
-  - simple:
-       version: "v2.0.0"
   - redirects:              # Redirects for the custom 404 page
       404.md: 404.md
