@@ -1,7 +1,0 @@
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   pickle_data
-   pickle_data_path_lists
-   pickle_files_path_list
