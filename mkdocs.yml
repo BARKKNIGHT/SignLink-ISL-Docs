@@ -98,13 +98,11 @@ nav:
   - Training: training.md
 repo_url: https://github.com/Naneet/SignLink-ISL
 repo_name: Naneet/SignLink-ISL
+use_directory_urls: true
 plugins:
   - git-committers:
       repository: https://github.com/Naneet/SignLink-ISL
       branch: main
-
-use_directory_urls: true
-plugins:
   - search
   - offline
   - redirects:              
