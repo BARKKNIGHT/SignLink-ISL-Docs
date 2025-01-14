@@ -1,6 +1,7 @@
 # `__init__`
 
-#### Initializes an object of Trainer Class with necessary parameters to train a model.
+## Purpose
+Initializes an object of Trainer Class with necessary parameters to train a model.
 
 #### Function Definition
 ```python

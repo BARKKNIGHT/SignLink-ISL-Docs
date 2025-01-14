@@ -53,7 +53,6 @@ nav:
       - Video Dataset Loader MediaPipe: data_loader/Video_dataset_loader_mediapipe.md
       - Video Dataset Loader MediaPipe Keypoints: data_loader/Video_dataset_loader_mediapipe_keypoints.md
       - Video Dataset Loader MediaPipe Interpolated CV: data_loader/video_dataset_loader_mediapipe_interpolated_cv.md
-      
 
   - Trainers:
     - About: trainers/index.md
@@ -100,12 +99,13 @@ nav:
 repo_url: https://github.com/Naneet/SignLink-ISL
 repo_name: Naneet/SignLink-ISL
 use_directory_urls: true
-
 plugins:
   - git-committers:
-      repository: Naneet/SignLink-ISL
+      repository: https://github.com/Naneet/SignLink-ISL
       branch: main
   - search
   - offline
   - redirects:              
       404.md: 404.md
+
+  
