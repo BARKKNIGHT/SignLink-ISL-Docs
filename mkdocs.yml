@@ -49,10 +49,10 @@ nav:
   - Dataset: dataset.md
 
   - Data_Loader:
-      - Video Dataset Loader MediaPipe Interpolated CV: data_loader/video_dataset_loader_mediapipe_interpolated_cv.md
-      - Video Dataset Loader MediaPipe Keypoints: data_loader/Video_dataset_loader_mediapipe_keypoints.md
-      - Video Dataset Loader MediaPipe: data_loader/Video_dataset_loader_mediapipe.md
       - Video Dataset Loader: data_loader/VideoDatasetLoader.md
+      - Video Dataset Loader MediaPipe: data_loader/Video_dataset_loader_mediapipe.md
+      - Video Dataset Loader MediaPipe Keypoints: data_loader/Video_dataset_loader_mediapipe_keypoints.md
+      - Video Dataset Loader MediaPipe Interpolated CV: data_loader/video_dataset_loader_mediapipe_interpolated_cv.md
 
   - Trainers:
     - About: trainers/index.md
