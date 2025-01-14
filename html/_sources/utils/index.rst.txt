@@ -1,6 +1,0 @@
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-   pickle/index
-   data_words/index
