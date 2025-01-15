@@ -123,7 +123,9 @@ plugins:
   #     token: 
   - search
   - offline
-  - social
+  - social:
+      cards_layout_options:
+        description: My custom description
   - redirects:              
       404: 404.md
       404: 404.md
