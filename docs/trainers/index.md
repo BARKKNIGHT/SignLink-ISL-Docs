@@ -1,4 +1,4 @@
-# Utils
+# Trainers
 
 This section contains classes necessary for training models using dataloaders or pickled data.
 
