@@ -1,5 +1,5 @@
 site_name: SignLink-ISL
-
+# markdown_extensions: [mathjax]
 theme:
   name: material
   # logo: img/favicon.ico
