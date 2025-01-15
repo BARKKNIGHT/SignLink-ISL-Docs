@@ -53,9 +53,9 @@ Executes a single training epoch for the model using the training dataset. It ut
 
 ### Accuracy Calculation
 - **Formula**:  
-  \[
+  $$
   \text{Accuracy} = \left( \frac{\text{Total Correct Predictions}}{\text{Total Samples}} \right) \times 100
-  \]
+  $$
 
 ---
 

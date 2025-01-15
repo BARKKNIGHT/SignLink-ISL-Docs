@@ -1,5 +1,4 @@
 site_name: SignLink-ISL
-# markdown_extensions: [mathjax]
 theme:
   name: material
   # logo: img/favicon.ico
@@ -20,6 +19,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+    - navigation.footer
     - navigation.path
     - content.code.copy       # Enables the copy button for code snippets
     - search.suggest          # Search suggestions
@@ -32,6 +32,8 @@ theme:
     - content.code.annotate
 
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.highlight:
       linenums: true          # Enable line numbers
   - pymdownx.superfences       # Enhanced code block support
@@ -99,14 +101,32 @@ nav:
 repo_url: https://github.com/Naneet/SignLink-ISL
 repo_name: 'Naneet/SignLink-ISL'
 use_directory_urls: true
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+extra:
+#   social:
+#     - icon: fontawesome/brands/linkedin 
+#       link: https://www.linkedin.com/in/naneet-tyagi-0a60252b0/
+#     - icon: fontawesome/brands/linkedin 
+#       link: https://www.linkedin.com/in/yatharth-kaushik-201555294/
+    
+  generator: false
 plugins:
-  - git-committers:
-      repository: 'Naneet/SignLink-ISL'
-      branch: main
+  # - git-committers:
+  #     repository: 'Naneet/SignLink-ISL'
+  #     branch: main
+  #     token: 
   - search
   - offline
+  - social
   - redirects:              
       404: 404.md
       404: 404.md
-
-  
+# extra_javascript:
+#   - javascripts/mathjax.js
+#   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
