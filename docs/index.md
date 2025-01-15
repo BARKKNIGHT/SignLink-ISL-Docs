@@ -109,4 +109,5 @@ Weighted Metrics:
 ### Confusion Matrix
 
 ![confusion_matrix](../img/confusion_matrix.png#only-light)
+
 ![confusion_matrix](../img/confusion_matrix_dark.png#only-dark)
