@@ -106,3 +106,8 @@ Weighted Metrics:
  - Precision: 0.9071
  - Recall: 0.8951
 
+### Confusion Matrix
+
+![confusion_matrix](../img/confusion_matrix.png#only-light)
+![confusion_matrix](../img/confusion_matrix_dark.png#only-dark)
+
